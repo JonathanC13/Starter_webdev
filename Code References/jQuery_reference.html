@@ -1,0 +1,68 @@
+<script>$(document).ready(function() {});</script> <!-- This is important because without your document ready function, your code may run before your HTML is rendered, which would cause bugs.-->
+
+<!-- jQuery functions-->
+
+<!--     $("button").addClass("animated");
+    $(".btn").addClass("shake");
+    $("#target1").addClass("btn-primary");-->
+
+<script>
+  $(document).ready(function() {
+    $("button").addClass("animated bounce");	<!-- by element-->
+    $(".well").addClass("animated shake");		<!-- by class -->
+    $("#target3").addClass("animated fadeOut"); <!-- by id -->
+
+	$("#target2").removeClass("btn-default");	<!-- Can also remove -->
+	
+	$("#target1").css("color", "blue");			<!-- Also can change CSS of an HTML-->
+	
+	$("#target1").prop("disabled", true);	<!-- You can also change the non-CSS properties of HTML elements with jQuery. For example, you can disable buttons.-->
+	
+		<!-- Using jQuery, you can change the text between the start and end tags of an element. You can even change HTML markup.
+	
+	$("#target4").text("yolo"); <!-- replace text-->
+	$("#target4").html("<em>#target4</em>");	<!--jQuery has a function called .html() that lets you add HTML tags and text within an element. Any content previously within the element will be completely replaced with the content you provide using this function.-->
+	
+	$("#target5").remove();	<!-- Now let's remove an HTML element from your page using jQuery.-->
+	
+	$("#target2").appendTo("#right-well");	<!-- Now let's try moving elements from one div to another. jQuery has a function called appendTo() that allows you to select HTML elements and append them to another element.-->
+  
+	$("#target5").clone().appendTo("#left-well"); <!--In addition to moving elements, you can also copy them from one place to another. jQuery has a function called clone() that makes a copy of an element. -->
+
+	<!-- Every HTML element has a parent element from which it inherits properties. For example, your jQuery Playground h3 element has the parent element of <div class="container-fluid">, which itself has the parent body. -->
+	$("#target1").parent().css("background-color", "red");	<!-- jQuery has a function called parent() that allows you to access the parent of whichever element you've selected. -->
+  
+	$("#right-well").children().css("color", "orange");	<!-- Many HTML elements have children which inherit their properties from their parent HTML elements.-->
+  
+	$(".btn:nth-child(2)").addClass("animated bounce");	<!-- jQuery uses CSS Selectors to target elements. target:nth-child(n) css selector allows you to select all the nth elements with the target class or element type.-->
+  
+	$(".target:even").addClass("animated shake");	<!-- You can also target all the even-numbered elements. Note that jQuery is zero-indexed, meaning that, counter-intuitively, :odd selects the second element, fourth element, and so on.-->
+  
+	$("body").addClass("animated hinge"); <!-- jQuery can target the body element as well.-->
+  });
+</script>
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Need id so jQuery is able to target-->

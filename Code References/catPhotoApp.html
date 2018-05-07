@@ -1,0 +1,169 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous"> <!-- Awesome fonts -->
+
+<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/> <!-- Add Bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">	<!-- Reference google-->
+<!--
+  .silver-background {
+    
+    background-color: silver;
+  }
+  
+  .red-text { <!-- Classes to apply to elements--><!--
+    color: red;
+  }
+-->
+
+<!--
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }-->
+<!--
+  .smaller-image {
+    width: 100px;
+	
+	#cat-photo-form {	
+		background-color:green;
+		}
+  }-->
+
+<style>
+	h2 {		
+		font-family: Lobster, Monospace; 
+	}
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+	border-radius: 50%; <!-- Can be 10px or 50 % ratio (for circle)-->
+  }
+
+  <!-- Style to specific elements-->
+  <!-- the one after comma is backup font-->
+
+</style>
+
+<div class = "container-fluid"> <!-- auto sizing-->
+
+	<!-- https://i.imgur.com/FaYuui8.png 12 colum grid layout: col-xs-12, split to fit all elements in row, Nest elements to align them-->
+
+	<!-- bootstrap: text-primary for blue text color-->
+	<!-- Different tags, "lorem ipsum" as placeholder -->
+	<div class="row">
+		<div class="col-xs-8">
+			<h2 class="text-primary text-center">CatPhotoApp</h2>
+		</div>
+
+	<!-- Nesting is putting one element inside of another element -->
+	<!--<p>Click here for <a href="http://www.freecatphotoapp.com">cat photos</a>.</p> <!-- "a" element for external link (href = "#" is for dead link, "cat photos" is the anchor tag (what the user sees)-->
+	
+	<!-- turn element into link-->
+		<div class="col-xs-4">
+		  <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
+		</div>
+	</div>
+	<!-- img-responsive auto fit to screen-->
+	<img class="img-responsive" src="https://bit.ly/fcc-running-cats" alt="3 cats">
+
+	<!-- btn: Bootstrap button, btn-block: stretch to fit screen-->
+	<!-- The btn-primary class is the main color you'll use in your app. It is useful for highlighting actions you want your user to take.-->
+	<div class = "row">
+		<div class ="col-xs-4">
+			<button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i>Like</button> <!-- Nested icon-->
+		</div>
+    
+		<div class ="col-xs-4">
+			<button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i>Info</button>
+		</div>  
+      
+		<div class ="col-xs-4">
+			<button class="btn btn-block btn-danger"><i class="fa fa-trash"></i>Delete</button>
+		</div>  
+	</div>  
+	
+	<!-- Paragraphs-->
+	<!-- class="red-text"-->
+	<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+	<p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+	<!-- The div element is probably the most commonly used HTML element of all. It's useful for passing the CSS of its own class declarations down to all the elements that it contains.-->
+
+	<!--<div class = silver-background>-->
+	<!-- ol is for ordered list (numbered) -->
+	<!-- ul is for unordered list (bullets), li is for items-->
+	<p>Things cats <span class ="text-danger"> love:</span></p> <!-- span: changes the style within element-->
+	<ul>
+	  <li>cat nip</li>
+	  <li>laser pointers</li>
+	  <li>lasagna</li>
+	</ul>
+	<p>Top 3 things cats hate:</p>
+	<ol>
+	  <li>flea treatment</li>
+	  <li>thunder</li>
+	  <li>other cats</li>
+	</ol>
+	<!--</div>-->
+
+
+	<!-- form action is to submit data to a server
+	<form action="/url-where-you-want-to-submit-form-data"></form>-->
+	<!-- unique id for jQuery and styling-->
+
+	<form id = cat-photo-form action="/submit-cat-photo">
+
+		<!-- The <label> tag defines a label for an <input> element.-->
+		<!-- if name is the same then they are related (clicking one, unclicks the other if is selected)-->
+		<div class="row">
+			<div class="col-xs-6">
+				<label><input type="radio" name="indoor-outdoor"> Indoor</label>
+			</div>
+      
+			<div class="col-xs-6">
+				<label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+			</div>
+        
+		</div>
+		
+		<br /> <!-- next line-->
+		<!-- You can set a checkbox or radio button to be checked by default using the checked attribute.-->
+		<div class="row">
+			<div class="col-xs-4">
+				<label><input type="checkbox" name="personality"> Loving</label>
+			</div>
+			<div class="col-xs-4">
+				<label><input type="checkbox" name="personality"> Lazy</label>
+			</div>
+			<div class="col-xs-4">
+				<label><input type="checkbox" name="personality"> Crazy</label>
+			</div>
+		</div>
+
+		<div class ="row">
+			<!-- input box, required will prompt the user if it is not filled-->
+			<div class="col-xs-7">
+				<input type="text" required placeholder="cat photo URL">
+			</div>
+			<div class="col-xs-5">
+				<button class="btn btn-primary" type="submit">Submit<i class="fa fa-paper-plane"></i></button>
+			</div>
+		</div>
+	</form>
+
+</div>
+
+<!-- Use Responsive Design with Bootstrap Fluid Containers
+
+In the HTML5 and CSS section of FreeCodeCamp we built a Cat Photo App. Now let's go back to it. This time, we'll style it using the popular Bootstrap responsive CSS framework.
+
+Bootstrap will figure out how wide your screen is and respond by resizing your HTML elements - hence the name Responsive Design.
+
+With responsive design, there is no need to design a mobile version of your website. It will look good on devices with screens of any width.-->
+
+<!-- Bootstrap uses a responsive grid system, which makes it easy to put elements into rows and specify each element's relative width. Most of Bootstrap's classes can be applied to a div element.
+
+Note that in this illustration, the col-md-* class is being used. Here, md means medium, and * is a number specifying how many columns wide the element should be. In this case, the column width of an element on a medium-sized screen, such as a laptop, is being specified.
+
+In the Cat Photo App that we're building, we'll use col-xs-*, where xs means extra small (like an extra-small mobile phone screen), and * is the number of columns specifying how many columns wide the element should be.-->

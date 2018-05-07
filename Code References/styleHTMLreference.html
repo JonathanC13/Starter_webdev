@@ -1,0 +1,115 @@
+<!-- You may have already noticed this, but all HTML elements are essentially little rectangles.
+
+Three important properties control the space that surrounds each HTML element: padding, margin, and border.-->
+
+<!-- https://www.w3schools.com/css/css_boxmodel.asp-->
+
+<!-- An element's padding controls the amount of space between the element and its border. space between text and top/bottom border-->
+<!-- CSS (Cascading Style Sheets)allows you to control the padding of an element on all four sides with padding-top, padding-right, padding-bottom, and padding-left properties. -->
+<!-- Instead of specifying an element's padding-top, padding-right, padding-bottom, and padding-left properties, you can specify them all in one line, like this:
+
+padding: 10px 20px 10px 20px; (top right bottom left)-->
+
+<!-- An element's margin controls the amount of space between an element's border and surrounding elements.-->
+<!-- CSS allows you to control the margin of an element on all four sides with margin-top, margin-right, margin-bottom, and margin-left properties.-->
+
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 20px 40px 20px 40px;
+  }
+  
+  .red-box {
+    background-color: red;
+    margin: 20px 40px 20px 40px;
+  }
+
+  .green-box {
+    background-color: green;
+    margin: 100px 20px 20px 40px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+
+
+<!-- ----------------------------- -->
+
+<!-- Every HTML page has a body element. -->
+
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink !important;;
+  }
+  .blue-text {
+    color: blue;
+  }
+  #orange-text{
+    color:orange;
+  }
+</style>
+
+<!-- Override body color if directly apply class, The class declaration in <style> order is important: Later declaration take precedence over previous-->
+<!-- BUT, using id will overwrite <style>.-->
+<!-- BUT, inline style overwrite all! -->
+<!-- BUT MOST POWERFUL, using !important -->
+<h1 style="color: green"id = "orange-text" class="pink-text blue-text">Hello World!</h1>
+
+<!-- In many situations, you will use CSS libraries. These may accidentally override your own CSS. So when you absolutely need to be sure that an element has specific CSS, you can use !important-->
+
+
+<!-- ----------------------------->
+<!-- In CSS, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components. For example, #000000 is black and is also the lowest possible value.-->
+
+<!-- If you do the math, the two digits for one color equal 16 times 16, which gives us 256 total values. So RGB, which starts counting from zero, has the exact same number of possible values as hex code.-->
+<style>
+
+  body {
+    background-color: rgb(0,0,0);
+  }
+  
+  .red-text {
+    color: #FF0000;
+  }
+  .green-text {
+    color: #00FF00;
+  }
+  .dodger-blue-text {
+    color: #2998E4;
+  }
+  .orange-text {
+    color: #FFA500;
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="green-text">I am green!</h1>
+
+<h1 class="dodger-blue-text">I am dodger blue!</h1>
+
+<h1 class="orange-text">I am orange!</h1>
+
+
