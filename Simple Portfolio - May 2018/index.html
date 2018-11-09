@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">    
+
+        <!-- navbar-brand class is applied to typical branding logo you see in the top navigation bar.It may just contain a typical image logo or text.-->
+        <a id="sig" class="navbar-brand" href="#">
+          JC
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="navbar-custom" aria-expanded="false" aria-label="Toggle navigation">
+          ☰
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNav">
+          <!--<div class="navigation-bar">-->
+          <!-- ml-auto shift to the right of the navbar-->
+            <ul id = "nav_options"> <!-- class="navbar-nav" buttons touching-->
+              <li id="nav-list" class="nav-item">
+                <div class = "btn inset"> <!-- active-->
+                  <a href="#about_block">About
+                    <div class="bottom-line"></div>
+                  </a>
+                </div>
+              </li>
+              
+              <li class="nav-item">
+                <div class = "btn">
+                  <a href="#projects_block">Projects
+                    <div class="bottom-line"></div>
+                  </a>
+                </div>
+              </li>
+              
+              <li class="nav-item">
+                <div class = "btn">
+                  <a href="#contact_block">Contact
+                    <div class="bottom-line"></div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+        
+          <!--</div>-->
+        </div>
+       
+        
+        
+      </div>
+    </nav>
+    <!-- Navigation END -->
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class = "jumbotron" id="main_jumbo">
+        
+        <!-- ABOUT section -->
+        <span class="anchor" id="about_block"></span>
+        <section>
+
+          <div class = "row" id = "header_row">
+
+            <div class = "col-sm-7" id="about_left">
+              <div id = "intro">
+                <h2 id ="about_text">Student of Systems and Computer Engineering.</h2>
+              </div>
+              <div>
+                <h2 id = "about_line"></h2>
+              </div>
+            </div> 
+            
+            <div class = "col-sm-5">
+              <header id = "profile_pic">
+                <img class ="img-responsive" src="http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg" alt = "profilePic">
+              </header>
+            </div>
+            
+          </div>
+
+        </section>
+        
+        <!-- ABOUT section END -->
+        <!-- Project section-->
+        <span class="anchor" id="projects_block"></span>
+        <section id="projects_section">
+          <div class="row" id="port_row">
+            <div class = "col-sm-12" id="port_col">
+              <div>
+                <h2 id="portfolio_text">Portfolio</h2>
+              </div>
+              <div>
+                <h2 id = "port_line"></h2>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class = "row" id="projects_row">
+
+            <div id="left_box" class="col-sm-7">
+              <h3 id="proj_text">Project samples</h3>
+              
+              <!-- first sample -->
+              <a href = "https://github.com/JonathanC13/Touch-Screen-System" target="_blank">
+                <h3 id="first_sample_title">My component for a 4th year project, DIY touch screen.</h3>
+              
+                <!--<img src="https://i.imgur.com/IYwZJKJ.jpg" id="first_sample" alt="DIY touch screen">-->
+              </a>
+
+              <iframe id="first_vid" src="https://www.youtube.com/embed/uheqU3PMgto" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              
+              
+              <!-- second sample -->
+              <a href = "https://github.com/EliabWoldeyes/Robot_Design_Project" target="_blank">
+                <h3 id="second_sample_title">Wall maze solving robot.</h3>
+              </a>
+              <iframe id="second_vid" src="https://www.youtube.com/embed/U8WwMDkwHak" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              
+            </div>
+
+            <div id="right_box" class="col-sm-5">
+              <div class ="row">
+                <div class="col-xs-12" id="rep_col">
+                  <h3 id="rep_text">Repositories</h3>
+                </div>
+              </div>
+              <div class = "row" id="first_row">
+                
+                <div class="col-xs-6" id="left_col">
+                  <a href="https://github.com/JonathanC13" target="_blank">
+                    <img id="left_logo" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png" alt="github logo">
+                  </a>
+                </div>
+                <div class="col-xs-6" id="right_col">
+                  <a href="https://codepen.io/jonathanc13/" target="_blank">
+                    <img id="right_logo" src="https://cdn.iconscout.com/public/images/icon/free/png-256/codepen-logo-325711981d27ad98-256x256.png" alt="codepen logo">
+                  </a>
+                </div>
+              </div>
+              
+              <div class = "row" id="second_row">
+                
+                <div class="col-xs-6" id="left_col2">
+                  <a href="https://www.freecodecamp.org/jonathanc13" target="_blank">
+                    <img id="left_logo2" src="https://crunchbase-production-res.cloudinary.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1486990003/n3zpgaiqxb9ioz0tysxw.png" alt="free code camp logo">
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+          
+        </section>
+        <!-- project section END -->
+        
+        <!-- Contact section-->
+        <span class="anchor" id="contact_block"></span>
+        <section id="contact_section">
+          
+          <div class = "row" id="contact_row">
+            <div class = "col-sm-12">
+              <div>
+                <h3 id="contact_title">Contact me</h3>
+              </div>
+              <div>
+                <h2 id="contact_line"></h2>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row" id="contact_descrip">
+            <div class = "col-sm-12">
+              <div>
+                <h3 id="contact_title">If you would like to contact me, you may use the form below. (form doesn't work at the moment)</h3>
+              </div>
+            </div>
+          </div>
+          
+          <!-- form for contact-->
+          <div class = "jumbotron" id="contact_jumbo">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Name</label>
+                  <input type="text" class="form-control" id="name_form" placeholder="name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="email_form" placeholder="example@email.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputAddress">Subject</label>
+                <input type="text" class="form-control" id="subject_form" placeholder="subject line">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+              <button id="contact_send" type="submit" class="btn">Send</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- /.container -->
+
+  </body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

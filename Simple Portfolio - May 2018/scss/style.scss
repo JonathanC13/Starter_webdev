@@ -1,0 +1,363 @@
+
+body {
+  background-color: rgb(247,247,249);
+}
+
+//*** Navigation Bar***
+// navbar wrapper
+nav {
+  height: 70px; //height of nav bar
+  background-color: #000000;
+  //margin: -40px 0px -40px 0px;
+  div {
+    //border: 3px solid blue; // just for visualization
+  }
+}
+
+// company logo
+#sig {
+  color: #ffffff; // text color
+  height: 70px;
+  padding-top: 15px;
+
+  //border: 3px solid blue;
+}
+
+.navbar-toggler {
+  background-color: #ffffff;
+}
+
+#myNav {
+  //border: 3px solid red;
+}
+
+// list container
+#nav_options {
+  position: absolute; //
+  text-align: center; // center in the fixed width box
+  //width: 94%; // fixed width of links
+  //border: 3px solid green;
+  
+  // set container so can set the link placement
+  margin: 0;
+  padding: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  
+  li {
+    display:inline;
+    margin-right:-4px; // buttons closer together
+    //border: 3px solid green;
+    // buttons for the navigation links
+    
+    .btn {
+      opacity: 1;
+      transition: 0.3s;
+      border-radius: 0 !important;
+      //margin-top:15px;
+      height: 70px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      //border: 3px solid green;
+    }
+    
+    .active {
+      background-color: #f00;
+      border-radius: 0 !important;
+      height: 70px;
+      //padding-top: 14px;
+      //padding-bottom: 14px;
+    }
+    
+    // navbar contents
+    a {
+      text-decoration: none;
+      float: center;
+      display:inline-block;
+      color:#ffffff; // text color
+      //background-color: #595959;
+      padding: 10px 10px 10px 10px;
+      //border: 3px solid red;
+    }
+    
+    .btn:hover {
+      background-color: #666;
+      color: white;
+      height: 70px;
+      //display:inline-block; 
+      border-radius: 0 !important;
+      opacity: 1;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid red;
+    }
+  }
+
+}
+
+//*** Navigation Bar END***
+
+#main_jumbo {
+  margin-top: 100px;
+  background-color:#ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+// About section
+
+#header_row {
+  background-color: rgb(247,247,249);
+  padding: 20px 10px 20px 10px;
+  //border: 5px solid red;
+  border-bottom: 2px solid #ffffff;
+  
+  #about_left {
+    //border: 5px solid black;
+    height: auto;
+    word-wrap: break-word;
+    text-align:center; // center when resizing
+
+    //position: relative; // not needed?
+    
+    #about_text {
+      
+      line-height: 1.5; // vertical adjust
+      display: inline-block; 
+
+      vertical-align: middle; // not needed?
+
+      font-family: Sans-serif;
+      font-size: 1.5em;
+      
+      margin: 0;
+      position: absolute;
+      top: 45%; // from top
+      left: 50%; // from left
+      margin-right: -50%;
+      transform: translate(-50%, -50%) 
+    }
+    
+    #about_line {
+      position: relative; // relative to text
+      //border: 5px solid blue;
+      margin-top: 130px;
+      transform: translate(50%, 50%);
+      width:50%;
+      border-bottom: 4px solid #666666;
+    }
+
+  }
+  
+  #profile_pic {
+    text-align: center;
+    //border: 5px solid blue;
+    height:100%;
+    width:100%;
+    img {
+      
+      border-color: white;
+      border-width: 5px;
+      border-style: solid;
+      border-radius: 50%; //Can be 10px or 50 % ratio (for circle)
+      width:50%; // image size
+    }
+  }
+}
+
+#projects_section {
+
+  //border: 5px solid blue;
+  background-color: rgb(247,247,249);
+  padding: 20px 15px 20px 15px;
+  border-bottom: 2px solid #ffffff;
+  
+  height:auto;
+  
+  margin-left: -15px;
+  margin-right: -15px;
+  
+  #port_row {
+    padding-left: 10px;
+    padding-right: 10px;
+    #port_col{
+      height:75px;
+      //border: 5px solid red;
+      #portfolio_text {
+        //border: 5px solid red;
+        text-align: center;
+
+        font-family: Sans-serif;
+        font-size: 1.5em;
+      }
+      
+      #port_line {
+        position: relative; // relative to text
+        //border: 5px solid blue;
+        transform: translate(50%, 50%); //center
+        left: 15%; // from left
+        width:35%;  // length of underline
+        border-bottom: 4px solid #666666;
+      }
+    }
+  }
+
+  #projects_row {
+    padding-left: 10px;
+    padding-right: 10px;
+    height:auto;
+    
+    
+    #left_box {
+      //border: 5px solid black; 
+      text-align: center;
+      // project samples title
+      #proj_text{
+        font-size: 1.5em;
+        font-family: Sans-serif;       
+        padding-bottom: 20px;
+      }
+      #first_sample_title {
+        color: #000000;
+        font-size: 1.2em;
+        font-family: Sans-serif;     
+        text-decoration: underline;
+      }
+      /*#first_sample { 
+        width:75%;
+        height: auto;
+        
+      }*/
+
+      #first_vid {
+        
+        width: 75%; 
+        height: 315px;
+      }
+      
+      #second_sample_title {
+        color: #000000;
+        margin-top:20px;
+        font-size: 1.2em;
+        font-family: Sans-serif;
+        text-decoration: underline;
+      }
+      
+      #second_vid {
+        width:75%;
+        height: 315px;
+      }
+      
+    }
+
+    #right_box {
+      margin-left: 0px;
+      //border: 5px solid green;
+      text-align: center;
+      
+      // rep title
+      #rep_text {
+        //border: 5px solid blue;
+        font-size: 1.4em;
+        font-family: Sans-serif;
+        padding-bottom: 20px;
+      }
+      
+      // center the rep column
+      #rep_col {
+        width: 100%;
+        //margin-bottom: -10px;
+      }
+      // first row left col for logo
+      #left_col {
+        width:50%;
+        #left_logo {
+          //border: 5px solid red;
+          width: 50%;
+        }
+      }
+      // first row right col for logo
+      #right_col {
+        width:50%;
+        #right_logo {
+          //border: 5px solid orange;
+          width: 50%;
+        }
+      }
+      #second_row {
+        margin-top: 60px;
+        //border: 5px solid red;
+        #left_col2 {
+          //border: 5px solid blue;
+          width:50%; // split row in half
+          #left_logo2 {
+            //border: 5px solid orange;
+            width: 50%; // logo scale down
+          }
+        } 
+      }
+    }
+  }
+}
+
+#contact_section {
+  background-color: rgb(247,247,249);
+  padding: 20px 10px 20px 10px;
+  //border: 5px solid red;
+  
+  margin-left: -15px;
+  margin-right: -15px;
+  #contact_row {
+    padding-left: 10px;
+    padding-right: 10px;
+    #contact_title {
+      font-size: 1.5em;
+      font-family: Sans-serif;       
+      //border: 5px solid green;
+      text-align: center;
+    }
+    #contact_line {
+      position: relative; // relative to text
+      //border: 5px solid blue;
+      transform: translate(50%, 50%);
+      left: 15%; // from left
+      width: 35%;
+      border-bottom: 4px solid #666666;
+    }
+  }
+  
+  // contact description
+  #contact_descrip {
+    margin-top: 20px;
+    #contact_title {
+      font-size: 1.2em;
+      font-family: Sans-serif;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+  }
+}
+
+#contact_jumbo {
+  background-color:#ffffff;
+  padding-bottom: 50px;
+  #contact_send {
+    //float: middle;
+    //margin-left: 47%;
+    width: 100%;
+    text-align:center;
+  }
+}
+
+// for jumping to sections with the fixed header
+.anchor{
+  display: block;
+  height: 70px; /*same height as header*/
+  margin-top: -70px; /*same height as header*/
+  visibility: hidden;
+}
+
+
